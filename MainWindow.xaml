@@ -1,0 +1,25 @@
+﻿<Window x:Class="AutoProdavnicaNew.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoProdavnicaNew"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="20" Margin="10,10,0,0" VerticalAlignment="Top" Width="90">
+            <MenuItem x:Name="meniPodaci" Header="Meni">
+                <MenuItem x:Name="meniFudbaler" Header="Korisnici" Click="korisniciClick"/>
+                <Separator/>
+                <MenuItem x:Name="meniTrener" Header="Vozila" Click="MeniTrener_Click"/>
+                <Separator/>
+                <MenuItem x:Name="meniLiga" Header="Prodato" Click="MeniLiga_Click"/>
+                <Separator/>
+                <MenuItem x:Name="meniKlub" Header="Obrisano" Click="MeniKlub_Click"/>
+                <Separator/>
+                <MenuItem x:Name="meniUtakmica" Header="Sacuvana" Click="MeniUtakmica_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>
